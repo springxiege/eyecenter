@@ -121,8 +121,41 @@ footer {
 		color: #95908B;
 	}
 }
+.teambg {
+	position: relative;
+	z-index: 1;
+	> img {
+		display: block;
+		width: 100%;
+	}
+	> span {
+		display: block;
+		width: 25%;
+		height: 40px;
+		background: #fff;
+		border-radius: 25px;
+		padding-left: 20px;
+		padding-right: 50px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -20px;
+		margin-left: -12.5%;
+		background-image: url('../images/search.jpg');
+		background-repeat: no-repeat;
+		background-size: auto 20px;
+		background-position: 95% center;
+		.bsb;
+		> input {
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+			border: 0;
+		}
+	}
+}
 .content {
-
 	.surrounds {
 		padding-left: 18%;
 		padding-right: 18%;
@@ -406,5 +439,112 @@ footer {
 			}
 		}
 	}
-	
+	.teams {
+		padding-left: 25%;
+		padding-right: 25%;
+		padding-top: 40px;
+		> ul {
+			display: block;
+			> li {
+				display: block;
+				margin-bottom: 50px;
+				> img {
+					display: block;
+					width: 46%;
+					border-radius: 8px;
+				}
+				.team-summary {
+					padding-left: 50%;
+					padding-top: 10px;
+					> h3 {
+						font-size: 20px;
+						font-weight: bold;
+						> small {
+							font-weight: normal;
+							padding-left: 20px;
+							font-size: 14px;
+							color: #6E6B66;
+						}
+					}
+					.summary {
+						padding-top: 20px;
+						padding-bottom: 80px;
+						> p {
+							color: #6E6B66;
+							line-height: 40px;
+						}
+					}
+					> a {
+						display: block;
+						width: 90px;
+						height: 36px;
+						line-height: 36px;
+						font-size: 14px;
+						border: 1px solid #20a3dc;
+						color: #20a3dc;
+						text-align: center;
+						border-radius: 18px;
+						&:hover {
+							box-shadow: 0 1px 5px #2DC2EB;
+							transition: all .5s;
+						}
+					}
+				}
+			}
+		}
+	}
+	.teamdetail {
+		padding-left: 10%;
+		padding-right: 10%;	
+		> img {
+			display: block;
+			width: 20%;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			border-radius: 8px;
+		}
+		.teamdetail-summary {
+			padding-left: 25%;
+			> h3 {
+				font-size: 20px;
+				font-weight: bold;
+				> small {
+					font-weight: normal;
+					padding-left: 20px;
+					font-size: 14px;
+					color: #6E6B66;
+				}
+			}
+			.team-text {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				color: #2a2a2a;
+				font-size: 12px;
+				line-height: 28px;
+			}
+		}
+		.team-now {
+			> h3{
+				font-size: 20px;
+				font-weight: bold;
+			}
+			ul {
+				display: block;
+				padding-left: 24px;
+				padding-top: 10px;
+				padding-bottom: 50px;
+				li {
+					display: block;
+					line-height: 40px;
+					font-size: 14px;
+					> span {
+						font-size: 16px;
+						padding-right: 20px;
+						vertical-align: 0px;
+					}
+				}
+			}
+		}
+	}
 }
