@@ -1557,3 +1557,72 @@ footer {
 		}
 	}
 }
+// boot page
+.boot {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+.boot-title {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	padding: 15px;
+	background-image: url('../images/bootbg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	.bsb;
+}
+.boot-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	> a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url('../images/handbg.png');
+		background-position: center 96%;
+		background-repeat: no-repeat;
+		background-size: 60px auto;
+		overflow: hidden;
+		.boot-logo {
+			width: 280px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15%;
+			text-align: center;
+			> img {
+				display: block;
+				max-width: 100px;
+				padding: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			> p {
+				color: #000;
+				font-size: 28px;
+				span {
+					font-size: 16px;
+					padding-top: 5px;
+					border-top: 1px solid #00A6E7;
+				}
+			}
+			> p:first-of-type{
+				padding-top: 24px;
+			}
+			> p:last-of-type{
+				margin-top: -5px;
+			}
+		}
+	}
+}
