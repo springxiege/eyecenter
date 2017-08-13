@@ -1,3 +1,10 @@
 .bsb{
 	box-sizing: border-box;
 }
+.rotate(@deg){
+	transform:rotate(@deg);
+	-ms-transform:rotate(@deg); 	/* IE 9 */
+	-moz-transform:rotate(@deg); 	/* Firefox */
+	-webkit-transform:rotate(@deg); /* Safari 和 Chrome */
+	-o-transform:rotate(@deg); 
+}
