@@ -62,7 +62,7 @@
 						        	<img src="./images/s-6.jpg" width="100%">
 						        </div>
 						        <div class="swiper-slide">
-									<img src="./images/s-6.jpg" width="100%">
+									<img src="./images/e-7.jpg" width="100%">
 						        </div>
 						    </div>
 						    
@@ -114,7 +114,7 @@
 									<img src="./images/t-3.jpg" width="100%">
 									<div class="summary">
 										<p><span>新无刀老花近视矫正</span></p>
-										<summary>采用德国鹰视双雄Wave Light FS200飞秒激光+AMARIS 750S准分子激光设备，仅要10分钟就完成，手术全程无刀、无痛，让病人轻松摘下眼镜，恢复到正常的视力。</summary>
+										<summary>老花、近视、散光、远视一并解决！利用无刀飞秒激光温和处理中老年龄的角膜，安全制作优质角膜瓣，使用新型准分子激光，维持远、中、近皆清晰的视力质量。</summary>
 									</div>	
 								</div>
 							</li>
@@ -123,7 +123,7 @@
 									<img src="./images/t-4.jpg" width="100%">
 									<div class="summary">
 										<p><span>美国角膜塑形术（OK镜)</span></p>
-										<summary>采用德国鹰视双雄Wave Light FS200飞秒激光+AMARIS 750S准分子激光设备，仅要10分钟就完成，手术全程无刀、无痛，让病人轻松摘下眼镜，恢复到正常的视力。</summary>
+										<summary>Orthokeratology，属于物理性、非手术性的矫正方式，利用夜晚睡觉时配戴角膜塑形镜片，达到矫正并控制近视度数的目的，过程不需开刀，也不用点散瞳剂。</summary>
 									</div>	
 								</div>
 							</li>
@@ -135,7 +135,24 @@
 			<div class="intro clearfix">
 				<div class="captain tag2">诊疗环境 <span>DIAGNOSIS</span></div>
 				<div class="diagn">
-					<img src="./images/s-5.jpg" width="100%" />
+					<!-- Slider main container -->
+					<div class="swiper-container">
+					    <!-- Additional required wrapper -->
+					    <div class="swiper-wrapper">
+					        <!-- Slides -->
+					        <div class="swiper-slide">
+					        	<img src="./images/s-5.jpg" width="100%" />
+					        </div>
+					        <div class="swiper-slide">
+								<img src="./images/e-1.jpg" width="100%" />
+					        </div>
+					        <div class="swiper-slide">
+								<img src="./images/e-6.jpg" width="100%" />
+					        </div>
+					    </div>
+					    <!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
 				</div>
 				<div class="diagn-text">
 					<p>“过去的医疗机构设计聚焦于给医护团队提供更好支持，而非关注病人实际需求。”</p>
@@ -156,11 +173,11 @@
 			</p>
 			<p>
 				<a href="./index.html">首页</a>
-				<a href="">太学简介</a>
-				<a href="">新闻动态</a>
-				<a href="">专家团队</a>
-				<a href="">摘镜分享</a>
-				<a href="">就医环境</a>
+				<a href="./intro.html">太学简介</a>
+				<a href="./news.html">新闻动态</a>
+				<a href="./team.html">专家团队</a>
+				<a href="./share.html">摘镜分享</a>
+				<a href="./surrounding.html">就医环境</a>
 				<span>Copyrights © 2017 版权所有 2017 浙 ICP备 1500039320 service@eyecenter.com.cn</span>
 			</p>
 		</div>
@@ -169,14 +186,25 @@
 	<script src="./js/swiper.jquery.min.js"></script>
 	<script>
 		$(function(){
+			var mySwiper = new Swiper($('.intro-swiper').find('.swiper-container'), {
+				autoplay: 5000,
+		      	// Optional parameters
+		      	loop: true,
+		      	// If we need pagination
+    			pagination: '.swiper-pagination',
+    			paginationClickable: true,
+    			// nextButton: '.swiper-button-next',
+    			// prevButton: '.swiper-button-prev'
+			})
 			//initialize swiper when document ready  
-		    var mySwiper = new Swiper ('.swiper-container', {
+		    var mySwiper2 = new Swiper ($('.diagn').find('.swiper-container'), {
 		    	autoplay: 5000,
 		      	// Optional parameters
 		      	loop: true,
 		      	// If we need pagination
     			pagination: '.swiper-pagination',
     			paginationClickable: true,
+    			autoHeight: true
     			// nextButton: '.swiper-button-next',
     			// prevButton: '.swiper-button-prev'
 		    });
