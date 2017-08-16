@@ -30,6 +30,9 @@
 		// 点击后才会执行动画 
 		$('body').one('click', function(){
 			$(this).addClass('transition');
+			setTimeout(function(){
+				window.location.href = './index.html';
+			}, 7000)
 			return false;
 		})
 	</script>
