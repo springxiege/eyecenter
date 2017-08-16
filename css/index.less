@@ -65,6 +65,7 @@ header {
 		padding-top: 30px;
 		font-size: 18px;
 		color: #00A6E7;
+		font-family: "黑体";
 		padding-left: 30px;
 		background-image: url(../images/tel.jpg);
 		background-repeat: no-repeat;
@@ -350,8 +351,10 @@ footer {
 		background-repeat: no-repeat;
 		background-size: 40px auto;
 		background-position: 0 center;
+		font-family: "黑体";
 		> span {
 			font-family: "黑体";
+			font-weight: 300;
 		}
 		> a {
 			display: inline-block;
@@ -381,6 +384,16 @@ footer {
 						background: #fff;
 						border-radius: 8px;
 						overflow: hidden;
+						> img {
+							transform: scale(1, 1);
+							transition: all .5s;
+						}
+						&:hover {
+							> img {
+								transform: scale(1.1, 1.1);
+								transition: all .5s;
+							}
+						}
 					}
 					> img {
 						display: block;
@@ -402,6 +415,7 @@ footer {
 						> h3 {
 							font-size: 22px;
 							font-weight: bold;
+							font-family: "黑体";
 							color: #DDDAD6;
 						}
 						> p {
@@ -752,6 +766,7 @@ footer {
 				border-radius: 8px;
 			}
 			.intro-swiper-container {
+				padding-top: 38px;
 				> .img {
 					padding: 90px 8% 0 0px;
 					background-image: url('../images/tag-4.png');
@@ -821,6 +836,7 @@ footer {
 				color: #fff;
 				text-align: center;
 				.news-time-wrap {
+					font-family: "黑体";
 					> div{
 						padding-top: 30px;
 						display: inline-block;
