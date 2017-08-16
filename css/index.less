@@ -358,7 +358,10 @@ footer {
 		}
 		> a {
 			display: inline-block;
-			font-size: 12px;
+			font-size: 16px;
+			height: 50px;
+			line-height: 60px;
+			overflow: hidden;
 			color: #C5C2BC;
 		}
 	}
@@ -650,12 +653,12 @@ footer {
 		.teamdetail-summary {
 			padding-left: 25%;
 			> h3 {
-				font-size: 20px;
+				font-size: 24px;
 				font-weight: bold;
 				> small {
 					font-weight: normal;
 					padding-left: 20px;
-					font-size: 14px;
+					font-size: 16px;
 					color: #6E6B66;
 				}
 			}
@@ -663,13 +666,16 @@ footer {
 				padding-top: 50px;
 				padding-bottom: 50px;
 				color: #2a2a2a;
-				font-size: 12px;
-				line-height: 28px;
+				font-size: 16px;
+				line-height: 36px;
+				> p {
+					font-size: 16px;
+				}
 			}
 		}
 		.team-now {
 			> h3{
-				font-size: 20px;
+				font-size: 24px;
 				font-weight: bold;
 			}
 			ul {
@@ -680,7 +686,7 @@ footer {
 				li {
 					display: block;
 					line-height: 40px;
-					font-size: 14px;
+					font-size: 16px;
 					> span {
 						font-size: 16px;
 						padding-right: 20px;
@@ -715,7 +721,7 @@ footer {
 							}
 							> summary {
 								line-height: 22px;
-								height: 66px;
+								height: 110px;
 								margin-top: 15px;
 								margin-bottom: 30px;
 								font-size: 14px;
@@ -804,6 +810,31 @@ footer {
 			background-repeat: no-repeat;
 			background-position: 10% bottom;
 			background-size: 20% auto;
+			img {
+				display: block;
+				padding: 0;
+				border: 0;
+				margin: 0;
+			}
+			.swiper-pagination {
+				.swiper-pagination-bullet{
+					opacity: 1;
+				    width: 12px;
+				    height: 12px;
+				    margin: 20px 5px;
+				    border: 2px solid #00B8E7;
+				    background: none;
+				    box-sizing: border-box;
+				}
+				.swiper-pagination-bullet-active {
+					background: #fff;
+    				border-width: 4px;
+    				&::after {
+    					background: none;
+    				}
+				}
+			}
+			
 		}
 		.diagn-text {
 			text-align: center;
@@ -1829,7 +1860,7 @@ footer {
 			text-align: center;
 			font-weight: bold;
 			color: #000;
-			margin-top: -6%;
+			margin-top: -4%;
 			opacity: 0;
 			animation: fadeOut 3s 8s linear forwards;
 		}
