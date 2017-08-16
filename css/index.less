@@ -34,6 +34,7 @@ header {
 				a {
 					display: block;
 					font-size: 18px;
+					font-weight: bold;
 					&::after {
 						display: block;
 						content: '';
@@ -62,18 +63,17 @@ header {
 	}
 	.tel {
 		padding-top: 30px;
-		font-size: 14px;
+		font-size: 18px;
 		color: #00A6E7;
 		padding-left: 30px;
 		background-image: url(../images/tel.jpg);
 		background-repeat: no-repeat;
 		background-size: auto auto;
-		background-position: 5px 30px;
-
+		background-position: 5px 32px;
 		span:nth-child(2) {
 			color: #E2E1DE;
-			padding-left: 16px;
-			padding-right: 16px;
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 	}
 }
@@ -350,6 +350,9 @@ footer {
 		background-repeat: no-repeat;
 		background-size: 40px auto;
 		background-position: 0 center;
+		> span {
+			font-family: "黑体";
+		}
 		> a {
 			display: inline-block;
 			font-size: 12px;
@@ -394,15 +397,17 @@ footer {
 						border-top-left-radius: 6px;
 						border-top-right-radius: 6px;
 						z-index: 10;
-						padding: 5% 6%;
+						padding: 5% 6% 10%;
 						.bsb;
 						> h3 {
 							font-size: 22px;
+							font-weight: bold;
 							color: #DDDAD6;
 						}
 						> p {
 							font-size: 14px;
 							color: #424242;
+							font-weight: bold;
 							margin: 4% 0 6%;
 							height: 40px;
 							line-height: 20px;
@@ -440,7 +445,7 @@ footer {
 	.system {
 		padding-left: 120px;
 		padding-right: 120px;
-		padding-top: 50px;
+		padding-top: 80px;
 		margin-bottom: -1%;
 		> ul {
 			display: block;
@@ -500,7 +505,7 @@ footer {
 		.contact {
 			overflow: hidden;
 			padding-top: 10px;
-			padding-bottom: 50px;
+			padding-bottom: 80px;
 			> div {
 				width: 50%;
 				&.address {
@@ -579,12 +584,13 @@ footer {
 					padding-left: 50%;
 					padding-top: 10px;
 					> h3 {
-						font-size: 20px;
+						font-size: 26px;
 						font-weight: bold;
 						> small {
 							font-weight: normal;
 							padding-left: 20px;
-							font-size: 14px;
+							font-weight: bold;
+							font-size: 15px;
 							color: #6E6B66;
 						}
 					}
@@ -593,6 +599,7 @@ footer {
 						padding-bottom: 80px;
 						> p {
 							color: #6E6B66;
+							font-size: 15px;
 							line-height: 40px;
 						}
 					}
@@ -684,7 +691,7 @@ footer {
 							margin-top: 10px;
 							> p:first-of-type {
 								text-align: center;
-								font-size: 16px;
+								font-size: 18px;
 								font-weight: bold;
 								> span {
 									padding: 3px;
@@ -724,7 +731,7 @@ footer {
 				background-image: url('../images/bg-1.png');
 				background-repeat: no-repeat;
 				background-position: left bottom;
-				background-size: 20% auto;
+				background-size: 30% auto;
 				> p {
 					padding-top: 20px;
 					font-size: 16px;
@@ -746,7 +753,7 @@ footer {
 			}
 			.intro-swiper-container {
 				> .img {
-					padding: 90px 12% 0 0px;
+					padding: 90px 8% 0 0px;
 					background-image: url('../images/tag-4.png');
 					background-repeat: no-repeat;
 					background-position: right top;
@@ -875,7 +882,7 @@ footer {
 				}
 				> .summary {
 					font-size: 16px;
-					line-height: 24px;
+					line-height: 32px;
 					padding-bottom: 24px;
 					> p {
 						font-size: 16px;
@@ -1012,6 +1019,7 @@ footer {
 			h2 {
 				background: none;
 				text-align: center;
+				font-weight: bold;
 				&::before {
 					vertical-align: -10px;
 					display: inline-block;
@@ -1277,6 +1285,7 @@ footer {
 				font-size: 24px;
 				border-bottom: 1px solid #E2DEDA;
 				padding-bottom: 16px;
+				font-weight: bold;
 			}
 			.share-summary {
 				font-size: 16px;
@@ -1569,9 +1578,9 @@ footer {
 						> a::before {
 							display: block;
 							content: '';
-							height: 24px;
-							margin-bottom: 10px;
-							margin-top: 10px;
+							height: 30px;
+							margin-bottom: 8px;
+							margin-top: 8px;
 							background-image: url('../images/c-m-11.png');
 							background-repeat: no-repeat;
 							background-position: center;
@@ -1582,6 +1591,9 @@ footer {
 								top: -10px;
 								> span {
 									&::before {
+										height: 30px;
+										margin-bottom: 8px;
+										margin-top: 8px;
 										background-image: url('../images/c-m-12.png');
 									}
 								}
@@ -1705,6 +1717,11 @@ footer {
 	height: 100%;
 	z-index: 1;
 	overflow: hidden;
+	// > img {
+		// display: block;
+		transform: scale(1, 1);
+		animation: ScaleImage 3s 5s linear forwards;
+	// }
 }
 .boot-title {
 	width: 100%;
@@ -1714,11 +1731,19 @@ footer {
 	top: 0;
 	z-index: 2;
 	padding: 15px;
+	opacity: 1;
 	background-image: url('../images/bootbg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% 100%;
 	.bsb;
+	// animation-delay:3s;
+	// -webkit-animation-delay:3s;
+	// animation-name: Opacity;
+	// animation-duration: 3s;
+	animation: Opacity 5s 3s linear forwards;
+	// tansition: all 3s;
+	// -webkit-tansition: all 3s;
 }
 .boot-container {
 	width: 100%;
@@ -1744,6 +1769,7 @@ footer {
 			margin-right: auto;
 			margin-top: 15%;
 			text-align: center;
+			animation: Scale 3s 5s linear forwards;
 			> img {
 				display: block;
 				max-width: 100px;
@@ -1780,6 +1806,15 @@ footer {
 			background-position: 0 0;
 			background-size: 100% auto;
 			animation: fadeIn 2s linear infinite;
+		}
+		.boot-info {
+			font-size: 24px;
+			text-align: center;
+			font-weight: bold;
+			color: #000;
+			margin-top: -6%;
+			opacity: 0;
+			animation: fadeOut 3s 8s linear forwards;
 		}
 	}
 }
