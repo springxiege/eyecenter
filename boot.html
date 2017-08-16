@@ -18,9 +18,20 @@
 				<p>太学眼科·杭州</p>
 				<p><span>UNIVERSAL EYE CENTER</span></p> -->
 			</div>
-			<div class="boot-info">安全 · 严谨 · 舒适&emsp;<span>看见你的未来</span></div>
 			<span></span>
+			<div class="boot-info">
+			<!-- 安全 · 严谨 · 舒适&emsp;<span>看见你的未来</span> -->
+			<img src="./images/bootbg2.png" width="400" />
+		</div>
 		</a>
 	</div>
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		// 点击后才会执行动画 
+		$('body').one('click', function(){
+			$(this).addClass('transition');
+			return false;
+		})
+	</script>
 </body>
 </html>

@@ -1768,7 +1768,7 @@ footer {
 	// > img {
 		// display: block;
 		transform: scale(1, 1);
-		animation: ScaleImage 3s 5s linear forwards;
+		// animation: ScaleImage 3s linear forwards;
 	// }
 }
 .boot-title {
@@ -1789,7 +1789,7 @@ footer {
 	// -webkit-animation-delay:3s;
 	// animation-name: Opacity;
 	// animation-duration: 3s;
-	animation: Opacity 5s 3s linear forwards;
+	// animation: Opacity 5s 3s linear forwards;
 	// tansition: all 3s;
 	// -webkit-tansition: all 3s;
 }
@@ -1817,7 +1817,7 @@ footer {
 			margin-right: auto;
 			margin-top: 15%;
 			text-align: center;
-			animation: Scale 3s 5s linear forwards;
+			// animation: Scale 3s 5s linear forwards;
 			> img {
 				display: block;
 				max-width: 180px;
@@ -1860,9 +1860,27 @@ footer {
 			text-align: center;
 			font-weight: bold;
 			color: #000;
-			margin-top: -4%;
+			margin-top: -5%;
+			transform: scale(.5, .5);
 			opacity: 0;
-			animation: fadeOut 3s 8s linear forwards;
+			// animation: fadeOut 3s 8s linear forwards;
 		}
 	}
+}
+.transition {
+	.boot {
+		animation: ScaleImage 3s linear forwards;
+	}
+	.boot-title {
+		animation: Opacity 3s linear forwards;
+	}
+	.boot-logo {
+		animation: Scale 3s linear forwards;
+	}
+	.boot-container {
+		.boot-info {
+			animation: fadeOut 2s 3s linear forwards;
+		}
+	}
+	
 }
